@@ -1,0 +1,81 @@
+/* setting fonts */
+*{
+    
+    font-family: 'Hind', sans-serif;
+    
+}
+
+h1, h2, h3{
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* SETTING COLORI */
+
+
+
+:root{
+
+    --primary :#191199;
+    --secondary : #FF6E4A;
+    --accent :#E2B659;
+    --whiteC : #FFFFFF;
+    --blackC : #000000;
+
+
+}
+
+/* CLASSI COLORI TESTI */
+
+.text-primaryC{
+
+    color: var(--primary);
+}
+
+.text-secondaryC{
+
+    color: var(--secondary);
+
+}
+
+.text-accentC{
+
+    color: var(--accent);
+}
+
+.text-whiteC{
+
+    color: var(--whiteC);
+}
+
+.text-blackC{
+
+    color: var(--blackC);
+}
+
+/* CLASSI COLORI BACKGROUND */
+
+.background-primaryC{
+
+    background-color: var(--primary);
+}
+
+.background-secondaryC{
+
+    background-color: var(--secondary);
+
+}
+
+.background-accentC{
+
+    background-color: var(--accent);
+}
+
+.background-whiteC{
+
+    background-color: var(--whiteC);
+}
+
+.background-blackC{
+
+    background-color: var(--blackC);
+}
