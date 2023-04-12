@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Presto.it</title>
     <link rel="shortcut icon" href="./media/favicon.png" type="image/x-icon">
-
+    <!-- SWIPER CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <!-- CDN AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- GOOGLE FONT CDN -->
@@ -48,7 +49,7 @@
             <a class="nav-link text-whiteC" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-whiteC" href="#">Blog</a>
+            <a class="nav-link text-whiteC" href="./annunci.html">Annunci</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-whiteC" href="#">Chi siamo?</a>
@@ -94,29 +95,256 @@
                 </div>
             </div>
         </section>
-
-
     <!-- FINE SECTION AOS -->
+
+    <!-- SWIPER -->
+    <section class="container my-5 py-5">
+      <div class="row justify-content-center">
+
+        <div class="col-12 col-md-8">
+
+          <!-- Slider main container -->
+            <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+                <!-- Slides -->
+    
+          </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination">
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- FINE SWIPER -->
+
+    <!-- INIZIO MOUSE ENTER -->
+      <div id="mouseEnter" class="divVuoti">
+
+      </div>
+      <section class="container-fluid background-accentC my-5 py-5" >
+  
+        <div class="container">
+  
+          <div class="row justify-content-evenly">
+  
+          <h2 class="display-3 text-center">Spedizioni</h2>
+  
+            <div class="col-12 col-md-3 col-custom my-3">
+  
+              <i class="fa-solid fa-truck-fast fa-3x text-secondaryC"></i>
+              <h3>Lorem Ipsum</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quod!</p>
+  
+            </div>
+  
+            <div class="col-12 col-md-3 col-custom my-3">
+  
+              <i class="fa-solid fa-truck-fast fa-3x text-secondaryC"></i>
+              <h3>Lorem Ipsum</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quod!</p>
+  
+            </div>
+  
+            <div class="col-12 col-md-3 col-custom my-3">
+  
+              <i class="fa-solid fa-truck-fast fa-3x text-secondaryC"></i>
+              <h3>Lorem Ipsum</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quod!</p>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </section>
+
+    <!-- FINE MOUSE ENTER -->
+
+    <!-- INIZIO FOOTER -->
+    
+    <footer class="container-fluid mt-5 py-5 background-secondaryC text-blackC">
+
+      <div class="container">
+
+        <div class="row min-h">
+
+          <div class="col-12 col-md-4 text-center my-3">
+
+            <h2 class="text-whiteC">About Presto</h2>
+            <p>P.IVA: 1234567</p>
+            <p>Indirizzo: Via Le Mani Dagliocchi</p>
+            <p>Tel: +39 3455665433</p>
+            <p>e-mail: miamail@miamail.it</p>
+
+            <div class="d-flex justify-content-center">
+
+              <i class="fa-brands fa-facebook fa-1x"></i>
+              <i class="fa-brands fa-instagram mx-3 fa-1x"></i>
+              <i class="fa-brands fa-linkedin fa-1x"></i>
+
+            </div>
+
+
+          </div>
+
+          <div class="col-12 col-md-4 text-center my-3">
+
+            <h2 class="text-whiteC">Quick Menu</h2>
+            <a href="#animate" class="footer-link"><p>Un pò di numeri</p></a>
+            <a href="#aboutUs" class="footer-link"><p>Recensioni</p></a>
+            <a href="#mouseEnter" class="footer-link"><p>Spedizioni</p></a>
+            
+          </div>
+
+
+          <div class="col-12 col-md-4 text-center my-3">
+
+            <h2 class="text-whiteC">Collaborazioni</h2>
+            <p>Aulab</p>
+            <p>Bartolini</p>
+            <p>Amazon</p>
+            <p>Disney</p> 
+          
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    <!-- FINE FOOTER -->
+  
+
+
+
+
+
+
+
+
+
+
 
   
    
 
 
 
-<!-- JS AOS -->
+    <!-- JS AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
 
     </script>
-<!-- INIZIALIZZO AOS -->
+    <!-- INIZIALIZZO AOS -->
     <script>
         AOS.init();
     </script>
-
+    <!-- SWIPER CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!--JS BOOTSTRAP  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
     </script>
     <!-- JS INTERNO CUSTOM -->
+    <script>
 
+      let reviews = [
+        {name : 'Pam', quote : 'Sempre puntuale, molto soddisfatta del prodotto', vote : 5},
+        {name : 'Jim', quote : 'Staff competente e professionale', vote : 4},
+        {name : 'Oscar', quote : 'Pacco consegnato ma scatola danneggiata', vote : 3},
+        {name : 'Dwight', quote : 'Pessimo', vote : 1},
+      ];
+
+      // catturo lo swiper wrapper
+
+      let swiperWrapper = document.querySelector('.swiper-wrapper');
+
+      reviews.forEach( (recensione)=>{
+
+        let div = document.createElement('div');
+
+        div.classList.add('swiper-slide','d-flex', 'align-items-center', 'justify-content-center')
+
+        div.innerHTML = `
+                        <div class="card-custom">
+                          <h3>${recensione.name}</h3>
+                          <p>${recensione.quote}</p>
+                           <div class="d-flex text-center p-2">
+                            ${createStars(recensione.vote)}
+                            </div>
+                        </div>
+                        
+        `;
+
+        swiperWrapper.appendChild(div);
+        
+
+      })
+
+      // funzione stelle 
+      
+      function createStars(fullStars){
+
+
+        let final = '';
+
+        for(let i = 1; i <=5; i++){
+
+          if(fullStars >= i){
+
+
+            final += `<i class="fa-solid fa-star"></i>`;
+
+
+          } else {
+
+
+            final += `<i class="fa-regular fa-star"></i>`;
+
+
+          }
+
+
+        }
+
+        return final;
+
+        }
+
+      // inizializzazione swiper
+        const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          // direction: 'vertical',
+          loop: true,
+
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        });
+
+    </script>
     <!-- JS ESTERNO CUSTOM -->
     <script src="./main.js"></script>
   </body>

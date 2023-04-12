@@ -111,3 +111,68 @@ let observed = new IntersectionObserver(
 )
 
 observed.observe(h2Test);
+
+// EVENTO MOUSE ENTER
+
+// cattura dei camioncini
+let camioncini = document.querySelectorAll('.fa-truck-fast');
+
+// cattura delle card
+let columns = document.querySelectorAll('.col-custom');
+
+// variabile d'appoggio per far ritornare tutto alle origini
+let columnsConfirm = false;
+
+columns.forEach( (colonna, i)=>{
+    
+
+    // alla singola colonna attacco l'evento mouseenter
+
+        colonna.addEventListener('mouseenter', ()=>{
+
+        if(columnsConfirm == false){
+
+            camioncini[i].classList.remove('text-secondaryC');
+            camioncini[i].classList.add('text-accentC');
+
+        
+        } else {
+
+               // alla seconda entrata
+               camioncini[i].classList.remove('text-blackC'); 
+
+                // e diventa per un attimo del colore di sfondo finché non parte il mouse leave
+
+
+        }
+           
+    
+        })
+
+   
+
+    // alla singola colonna attacco l'evento mouseleave
+
+    colonna.addEventListener('mouseleave', ()=>{
+
+
+        if(columnsConfirm == false){
+
+            camioncini[i].classList.remove('text-accentC');
+            camioncini[i].classList.add('text-blackC');
+
+            columnsConfirm = true;
+
+        } else {
+
+            // alla seconda uscita 
+            camioncini[i].classList.add('text-secondaryC');
+
+            columnsConfirm = false;
+
+        }
+
+    })
+
+
+});
