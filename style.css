@@ -1,6 +1,6 @@
 /* setting fonts */
 *{
-    color: var(--whiteC);
+    color: var(--accent);
    
     font-family: 'Bebas Neue', cursive;
 }
@@ -224,4 +224,12 @@ body{
     justify-content: space-evenly;
     align-items: center;
 
+}
+
+.announcement-card{
+
+   
+    min-height: 300px;
+    border: 2px solid var(--primary);
+    border-radius: 20px;
 }
